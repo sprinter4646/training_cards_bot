@@ -32,7 +32,7 @@ with open(TICKETS_PATH, 'r', encoding='utf-8') as file:
             # print(ticket_row, row)
             voprosy_otvety.append(ticket)
             ticket = []
-
+# print(len(voprosy_otvety))
 '''for ticket in voprosy_otvety:
     print(ticket, end='\n')'''
 
