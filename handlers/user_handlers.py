@@ -1,3 +1,4 @@
+# модуль с пользовательскими хэндлерами.
 from copy import deepcopy
 
 from aiogram import Router
@@ -10,10 +11,10 @@ from keyboards.further_kb import create_further_kb
 from lexicon.lexicon import LEXICON
 
 router: Router = Router()
-# для перемещения между хэндлерами объявим random_ticket глобальной
-global ticket
-global mode
-global ticket_n
+# для перемещения актуального значения ряда переменных между функциями объявим их глобальными
+global ticket  # Билет с вариантами ответа и клавиатура для выбора номера ответа
+global mode  # Режим тренировки Последовательный|Рандомный
+global ticket_n  # Номер билета для Последовательного режима
 
 
 # хэндлер на команду "/start" - добавляет пользователя в базу данных, если его там еще не было

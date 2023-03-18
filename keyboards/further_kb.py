@@ -1,3 +1,4 @@
+# модуль с функцией, которая отвечает за создание кнопок 'Еще билет' и 'Завершить'
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from lexicon.lexicon import LEXICON

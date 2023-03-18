@@ -1,3 +1,4 @@
+# модуль с текстами для реакции на различные события в работе бота
 from services.tickets_handling import voprosy_otvety
 
 LEXICON: dict[str, str] = {
@@ -15,7 +16,7 @@ LEXICON: dict[str, str] = {
     'sequential_mode_press': f'Введите номер вопроса в диапазоне: 1 - {len(voprosy_otvety)}"',
     '/ticket_n': 'Напишите номер вопроса'
 }
-
+# еще в этом модуле хранится словарь соответствий команд и их описаний для кнопки Menu бота
 LEXICON_COMMANDS: dict[str, str] = {
     '/start': 'Начать тренировку заново, обновить статистику тренировки',
     '/ticket_n': 'Ввести номер вопроса',

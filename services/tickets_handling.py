@@ -1,4 +1,4 @@
-# Формирует список билетов voprosy_otvety, состоящий из билетов в виде списка списков вида
+# Формирует список билетов voprosy_otvety из txt файла в виде списка билетов в виде списков вида
 # [['question_n ', 'answer1', 'answer2', 'answer3', 'right_answer']]
 # [[билет_вопрос, ответ1, ответ2, ответ3, 'правильный_ответ]]
 TICKETS_PATH = '/home/oleg/REPOS/TrainingCardsBot/tickets/2023 ВОПРОСЫ БОО.txt'
@@ -32,7 +32,3 @@ with open(TICKETS_PATH, 'r', encoding='utf-8') as file:
             # print(ticket_row, row)
             voprosy_otvety.append(ticket)
             ticket = []
-# print(len(voprosy_otvety))
-'''for ticket in voprosy_otvety:
-    print(ticket, end='\n')'''
-
