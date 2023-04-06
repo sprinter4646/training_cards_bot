@@ -1,7 +1,7 @@
 # Формирует список билетов voprosy_otvety из txt файла в виде списка билетов в виде списков вида
 # [['question_n ', 'answer1', 'answer2', 'answer3', 'right_answer']]
 # [[билет_вопрос, ответ1, ответ2, ответ3, 'правильный_ответ]]
-TICKETS_PATH = r'/home/oleg/Yandex.Disk/PYTHON_ubuntu/REPOS/training_cards_bot/tickets/2023 ВОПРОСЫ БОО.txt'
+TICKETS_PATH = r'tickets/2023 ВОПРОСЫ БОО.txt'
 with open(TICKETS_PATH, 'r', encoding='utf-8') as file:
     voprosy_otvety: list[[]] = []
     ticket_row = 0
